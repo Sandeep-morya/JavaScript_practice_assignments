@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+div>img{
+    border-radius: 1.6em;
+}
+#Member_B{
+    fill: red;
+}
+#parent{
+    width: 500px;
+    height: min-content;
+    margin: auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+}
+img{
+    width: 100%;
+}
+button{
+    width: 50%;
+    margin: auto;
+    padding: 25px 30px;
+    font-size: 20px;
+    grid-column: span 3;
+    border-radius: 10em;
+    background-color: orangered;
+    border: none;
+    color:white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 10px 2px grey;
+    transition: all 0.3s;
+}
+#winner{
+    font-family: Tahoma;
+    font-size: 25px;
+    width: 60%;
+    font-weight: bold;
+    margin: auto;
+    grid-column: span 3;
+}
+#win{
+    text-decoration: underline;
+}
+button:active{
+    padding:  20px 30px;;
+}
