@@ -4,6 +4,7 @@ body{
     height: 90vh;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 div>img{
     border-radius: 1.6em;
@@ -21,7 +22,9 @@ div>img{
 }
 img{
     width: 100%;
+    transition: all 1s;
 }
+
 button{
     width: 50%;
     margin: auto;

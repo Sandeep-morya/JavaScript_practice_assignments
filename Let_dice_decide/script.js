@@ -8,7 +8,17 @@ let z = Math.floor(Math.random() * 6);
 mem1.firstChild.src = "./assets/" + x + ".svg";
 mem2.firstChild.src = "./assets/" + y + ".svg";
 mem3.firstChild.src = "./assets/" + z + ".svg";
+let count=1;
+let array=document.querySelectorAll("img");
 document.querySelector("button").addEventListener("click", function (e) {
+  array.forEach(function(e){
+    if(count%2){
+      e.style.transform="rotateZ(360deg)";
+    }else{
+      e.style.transform="rotateZ(0deg)";
+    }
+    count++;
+  });
   x = Math.floor(Math.random() * 6);
   y = Math.floor(Math.random() * 6);
   z = Math.floor(Math.random() * 6);
