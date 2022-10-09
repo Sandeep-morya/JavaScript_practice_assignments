@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT-MANAGEMENT-SYSTEM</title>
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="logo">
+        <img
+          src="https://www.masaischool.com/img/navbar/logo.svg"
+          alt="masai_logo"
+        />
+      </div>
+
+      <ul id="list">
+        <li><a href="./dashboard.html">Dashboard</a></li>
+        <li><a href="./trash.html">Trash</a></li>
+        <div>
+          <li>Batch01 - (<span id="batch1_count"></span>)</li>
+          <li>|</li>
+          <li>Batch02 - (<span id="batch2_count"></span>)</li>
+        </div>
+      </ul>
+    </div>
+    <form id="form">
+      <label for="stdname">Student Name:</label>
+      <input
+        type="text"
+        id="stdName"
+        placeholder="Enter Student Name"
+        required
+      />
+
+      <select id="course" required>
+        <option value="">Course</option>
+        <option value="Web-Development">Web Development</option>
+        <option value="Android-Development">Android Development</option>
+        <option value="Data-Analytics">Data Analytics</option>
+      </select>
+
+      <select id="unit" required>
+        <option value="">Unit No.</option>
+        <option value="1">Unit1</option>
+        <option value="2">Unit2</option>
+        <option value="3">Unit3</option>
+        <option value="4">Unit4</option>
+        <option value="5">Unit5</option>
+        <option value="6">Unit6</option>
+      </select>
+
+      <!-- <input type="file" id="image" accept="image/*"> -->
+      <label for="image">Profile Photo:</label>
+      <input
+        type="url"
+        id="image"
+        placeholder="paste url of image here"
+        required
+      />
+
+      <select id="batch" required>
+        <option value="">Select Batch</option>
+        <option value="Batch01">Batch-01</option>
+        <option value="Batch02">Batch-02</option>
+      </select>
+
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+  <script src="script.js"></script>
+  <script src="index.js"></script>
+</html>

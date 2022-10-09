@@ -1,0 +1,31 @@
+body{
+  overflow-y: scroll;
+}
+table {
+width: 80vw;
+margin: auto;
+box-shadow: 0px 15px 10px -15px #111;
+border-radius: 0.5em;
+font-size: 18px;
+cursor:default;
+overflow: hidden;
+border-collapse: collapse;
+background-color: white;
+}
+thead > tr {
+background-color: #00b909;
+color: white;
+}
+th,
+td {
+font-size: 1.3rem;
+text-align: center;
+padding: 1rem;
+font-size: 16px;
+}
+tr:nth-child(even){
+  background: rgb(201, 201, 200);
+}
+.point{
+  cursor: pointer;
+}

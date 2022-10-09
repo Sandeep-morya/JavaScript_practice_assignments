@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="table.css">
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="logo"><img src="https://www.masaischool.com/img/navbar/logo.svg" alt="masai_logo"></div>
+
+      <ul id="list">
+        <li><a href="./dashboard.html">Dashboard</a></li>
+        <li><a href="./trash.html">Trash</a></li>
+        <div>
+          <li>Batch01 - (<span id="batch1_count"></span>)</li>
+          <li>|</li>
+          <li>Batch02 - (<span id="batch2_count"></span>)</li>
+        </div>
+      </ul>
+  </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Course</th>
+          <th>Unit No.</th>
+          <th>Profile Photo</th>
+          <th>Batch Name</th>
+          <th>Move to Trash</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- This part in appended in script file-->
+      </tbody>
+    </table>
+  </body>
+  <script src="dash.js"></script>
+  <script src="index.js"></script>
+</html>

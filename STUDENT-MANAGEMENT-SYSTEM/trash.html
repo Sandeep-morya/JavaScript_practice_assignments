@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        #clear{
+            position: absolute;
+            right: 3vw;
+            top: 20vh;
+
+        }
+        button{
+            width: 50px;
+            aspect-ratio: 1;
+            border-radius: 5em;
+            border: none;
+        }
+        svg{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo"><img src="https://www.masaischool.com/img/navbar/logo.svg" alt="masai_logo"></div>
+
+        <ul id="list">
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./trash.html">Trash</a></li>
+            <div>
+              <li>Batch01 - (<span id="batch1_count"></span>)</li>
+              <li>|</li>
+              <li>Batch02 - (<span id="batch2_count"></span>)</li>
+            </div>
+          </ul>
+    </div>
+    <table>
+        <thead>
+            <tr style="background: rgb(255, 0, 55)">
+                <th>Name</th>
+                <th>Category</th>
+                <th>Unit</th>
+                <th>Image url</th>
+                <th>Batch</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <button id="clear"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Clear-Trash</title><path d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 112h352"/><path d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+    </button>
+</body>
+<script src="trash.js"></script>
+<script src="index.js"></script>
+</html>
