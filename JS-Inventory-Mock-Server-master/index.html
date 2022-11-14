@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="header">Admin Panel</section>
+    <section id="main">
+
+        <div id="sidebar">
+          <h2>Add Product</h2>
+        <input type="text" id="name" placeholder="Product Name">
+        <input type="number" id="price" placeholder="Product Price">
+        <input type="text" id="description" placeholder="Product Description">
+        <input type="date" id="delivery">
+        <input type="url"  id="image" placeholder="Image Url">
+        <button id="add_product">Add Product</button>
+
+        <h1>Sort Based On Price</h1>
+        <button id="sort-low-to-high">Low to High</button>
+        <button id="sort-high-to-low">High to Low</button>
+
+        <h1>Filter by Price</h1>
+        <button id="greater-than">Price &#62; &#x20B9;4000</button>
+        <button id="less-than">Price &#60; &#x20B9;4000</button>
+        </div>
+
+        <div id="container">
+          
+          <!-- <div class="item">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b3a42f2af8c3435384ddaebd00c7c95c_9366/SEIZE_THE_STREET_SHOES_White_GA1134_01_standard.jpg" alt="">
+            <h4>shoe 1</h4>
+            <span class="product_delivery">2022-11-06</span>
+            <span>sample-2</span>
+            <div class="button_div">
+              <button class="remove_item">Remove</button>
+              <button class="update_price">Update Price</button>
+            </div>
+          </div> -->
+        </div>
+    </section>
+  </body>
+  </html>
+  
+  <script src="./src/scripts/index.js"></script>
